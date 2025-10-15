@@ -1,0 +1,7 @@
+flask
+pyjwt
+werkzeug
+Flask-SQLAlchemy
+requests
+beautifulsoup4
+gunicorn
