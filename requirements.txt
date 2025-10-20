@@ -1,7 +1,6 @@
-flask
-pyjwt
-werkzeug
-Flask-SQLAlchemy
+Flask
+pandas
+flasgger
+numpy
 requests
 beautifulsoup4
-gunicorn
