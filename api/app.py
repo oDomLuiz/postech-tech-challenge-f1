@@ -14,7 +14,7 @@ app.config.from_object('config')
 swagger = Swagger(app)
 
 # Define o caminho para o arquivo CSV
-DATA_FILE_PATH = os.path.join(os.path.dirname(__file__), '..', 'data', 'books_data.csv')
+DATA_FILE_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'books_data.csv'))
 
 def load_books_data():
     """
@@ -349,4 +349,5 @@ def get_books_by_price_range():
 # --- Ponto de partida para executar a aplicação ---
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    # Execução local apenas. O Vercel importa este módulo e usa a variável `app` como entrypoint WSGI.
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)), debug=False)
