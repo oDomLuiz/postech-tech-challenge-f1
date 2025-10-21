@@ -4,7 +4,11 @@
     {
       "src": "api/app.py",
       "use": "@vercel/python",
-      "config": { "maxLambdaSize": "15mb" }
+      "config": {
+        "includeFiles": [
+          "data/books_data.csv" 
+        ]
+      }
     }
   ],
   "routes": [
