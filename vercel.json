@@ -6,7 +6,7 @@
       "use": "@vercel/python",
       "config": {
         "includeFiles": [
-          "data/books_data.csv" 
+          "../data/books_data.csv"
         ]
       }
     }
