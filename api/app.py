@@ -58,6 +58,35 @@ def load_books_data():
         print(f"Erro ao carregar ou processar o arquivo CSV: {e}")
         return None
 
+@app.route('/', methods=['GET'])
+def index():
+    """
+    Página inicial da API.
+    Retorna uma breve descrição do projeto e links úteis.
+    ---
+    tags:
+      - Geral
+    responses:
+      200:
+        description: Informações sobre a API.
+        schema:
+          type: object
+          properties:
+            message:
+              type: string
+            docs_url:
+              type: string
+            health_check_url:
+              type: string
+    """
+    return jsonify({
+        "message": "Bem-vindo à API de Livros do Tech Challenge!",
+        "description": "Esta API foi desenvolvida como parte do Tech Challenge de Engenharia de Machine Learning. Ela extrai dados de livros do site books.toscrape.com e os disponibiliza via endpoints RESTful.",
+        "docs_url": "/apidocs",
+        "health_check_url": "/api/v1/health",
+        "github_repo": "https://github.com/oDomLuiz/postech-tech-challenge-f1" # Altere para o seu repositório
+    }), 200
+
 # --- Endpoints Obrigatórios (Implementados anteriormente) ---
 
 @app.route('/api/v1/health', methods=['GET'])
