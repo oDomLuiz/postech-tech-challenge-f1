@@ -349,5 +349,4 @@ def get_books_by_price_range():
 # --- Ponto de partida para executar a aplicação ---
 
 if __name__ == '__main__':
-    # Execução local apenas. O Vercel importa este módulo e usa a variável `app` como entrypoint WSGI.
-    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)), debug=False)
+    app.run()
