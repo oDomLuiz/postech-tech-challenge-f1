@@ -24,26 +24,8 @@ O pipeline de dados deste projeto foi estruturado em três etapas principais:
 
 ### Diagrama Visual
 
-graph TD
-    subgraph "Ambiente Local (Desenvolvimento)"
-        A[Site books.toscrape.com] --"1. Extrai dados"--> B(Script 'scrape_books.py')
-        B --"2. Gera arquivo"--> C[(data/books_data.csv)]
-    end
-
-    subgraph "Repositório (GitHub)"
-        C --"3. Commit dos dados"--> D[Repositório Git]
-    end
-
-    subgraph "Ambiente de Produção (Vercel)"
-        D --"4. Deploy"--> E{API Flask 'app.py'}
-        D --"4. Deploy"--> F[(Cópia de books_data.csv)]
-        E --"5. Lê dados"--> F
-    end
-
-    subgraph "Consumidor Final"
-        G[Usuário / Cliente] --"6. Requisição HTTP/S (GET)"--> E
-        E --"7. Resposta JSON"--> G
-    end
+[COLOQUE_SEU_DIAGRAMA_DA_ARQUITETURA_AQUI] 
+*(Ex: ![Diagrama da Arquitetura](docs/arquitetura.png))*
 
 ---
 
