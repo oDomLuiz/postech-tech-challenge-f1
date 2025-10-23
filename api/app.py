@@ -7,8 +7,11 @@ import numpy as np
 # Inicializa a aplicação Flask
 app = Flask(__name__)
 
-# Carrega as configurações do arquivo config.py
-app.config.from_object('config')
+SWAGGER_CONFIG = {
+    'title': 'Catálogo de APIs do Tech Challenge Scrape Books',
+    'uiversion': 3
+}
+app.config['SWAGGER'] = SWAGGER_CONFIG
 
 # Configura o Flasgger (Swagger)
 swagger = Swagger(app)
