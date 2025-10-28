@@ -24,8 +24,7 @@ O pipeline de dados deste projeto foi estruturado em três etapas principais:
 
 ### Diagrama Visual
 
-[COLOQUE_SEU_DIAGRAMA_DA_ARQUITETURA_AQUI] 
-*(Ex: ![Diagrama da Arquitetura](docs/arquitetura.png))*
+![Diagrama da Arquitetura](docs/arquitetura_tech_challenge_f1.jpg)
 
 ---
 
