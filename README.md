@@ -10,7 +10,7 @@ O desafio consiste em desenvolver uma API pública para consulta de livros  come
 
 * **API em Produção (Vercel):** `https://postech-tech-challenge-f1.vercel.app/` 
 * **Documentação (Swagger UI):** `https://postech-tech-challenge-f1.vercel.app/apidocs/` 
-* **Vídeo de Apresentação:** `[COLOQUE_O_LINK_DO_VÍDEO_AQUI]` 
+* **Vídeo de Apresentação:** `https://youtu.be/CBrRAyT5brU` 
 
 ---
 
