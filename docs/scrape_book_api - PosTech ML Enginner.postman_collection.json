@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "5b5b4e59-684f-46c1-8b3b-c1c2c16b60a7",
+		"name": "scrape_book_api - PosTech ML Enginner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33614129"
+	},
+	"item": [
+		{
+			"name": "Verificar a saúde da API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postech-tech-challenge-f1.vercel.app/api/v1/health",
+					"protocol": "https",
+					"host": [
+						"postech-tech-challenge-f1",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todos os livros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postech-tech-challenge-f1.vercel.app/api/v1/books",
+					"protocol": "https",
+					"host": [
+						"postech-tech-challenge-f1",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todas as categorias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postech-tech-challenge-f1.vercel.app/api/v1/categories",
+					"protocol": "https",
+					"host": [
+						"postech-tech-challenge-f1",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar livros por título e/ou categoria",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postech-tech-challenge-f1.vercel.app/api/v1/books/search?title=poetry&category=poetry",
+					"protocol": "https",
+					"host": [
+						"postech-tech-challenge-f1",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"search"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "poetry"
+						},
+						{
+							"key": "category",
+							"value": "poetry"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca livro por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postech-tech-challenge-f1.vercel.app/api/v1/books/{{id}}",
+					"protocol": "https",
+					"host": [
+						"postech-tech-challenge-f1",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca livros entre uma faixa de valores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postech-tech-challenge-f1.vercel.app/api/v1/books/price-range?min=10&max=15",
+					"protocol": "https",
+					"host": [
+						"postech-tech-challenge-f1",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"price-range"
+					],
+					"query": [
+						{
+							"key": "min",
+							"value": "10"
+						},
+						{
+							"key": "max",
+							"value": "15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca livros com avaliação 5 estrelas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postech-tech-challenge-f1.vercel.app/api/v1/books/top-rated",
+					"protocol": "https",
+					"host": [
+						"postech-tech-challenge-f1",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"top-rated"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Estatística livros por categorias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postech-tech-challenge-f1.vercel.app/api/v1/stats/categories",
+					"protocol": "https",
+					"host": [
+						"postech-tech-challenge-f1",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"stats",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Estatística geral dos livros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postech-tech-challenge-f1.vercel.app/api/v1/stats/overview",
+					"protocol": "https",
+					"host": [
+						"postech-tech-challenge-f1",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"stats",
+						"overview"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "id",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
